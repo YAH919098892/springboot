@@ -1,0 +1,7 @@
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/,http://127.0.0.1:7002/eureka/
+    register-with-eureka: false

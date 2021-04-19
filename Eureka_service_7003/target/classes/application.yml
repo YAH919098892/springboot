@@ -1,0 +1,12 @@
+server:
+  port: 7003
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: false #标识不向服务器注册自己
+    fetch-registry: false #标识为注册中心
+    service-url:
+      defaultZone: http://lochost:7002/eureka/  #注册地址
+  server:
+    enable-self-preservation: false #关掉自我保护机制
