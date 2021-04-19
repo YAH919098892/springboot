@@ -1,0 +1,31 @@
+server:
+  port: 8001
+mybatis:
+  type-aliases-package: com.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    cache-enabled: true
+
+spring:
+  application:
+    name: springcloud-devt #服务名称
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+#eureka的配置
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:7003/eureka/,http://127.0.0.1:7002/eureka/   # 向注册中心注册服务
+  instance:
+    instance-id: springcloud_dept_8001   #标志名称
+
+#info的配置 配置提供服务的人的信息
+info:
+  app.name: anhua-springcloud-dept8001
+  company.name: anhua.com
+
+
