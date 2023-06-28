@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class Springbootdemo8082 {
     public static void main(String[] args) {
         SpringApplication.run(Springbootdemo8082.class, args);
-        System.out.println("我是杨安华1");
+        System.out.println("我是杨安华11");
     }
 
 }
